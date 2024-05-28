@@ -5,6 +5,8 @@ $('form').on('submit', function(e){
     e.preventDefault()
     const nome = $('#nome').val()
     const text = $('#descricao').val()
+    
+
 
 
     //criando linha 
@@ -13,6 +15,8 @@ $('form').on('submit', function(e){
     $(`<textarea name="descricao" id="local-descricao" ></textarea>`).appendTo(linha)
     $(linha).appendTo('ol')
     $(linha).fadeIn(6000)
+    
+
     
 
     // resolver o add errado das linhas 
@@ -38,7 +42,12 @@ $('form').on('submit', function(e){
         $('#local-data').text(dataformatada)
     }else{
         alert('data invalida digite uma nova data ')
+
     }
+    $('#descricao').val('')
+    $('#data').val('')
+    $('#nome').val('')
     })
+    linhas=''
 
     
