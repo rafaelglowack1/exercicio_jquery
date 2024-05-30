@@ -4,31 +4,15 @@ $(document).ready(function(){
 $('form').on('submit', function(e){
     e.preventDefault()
     const nome = $('#nome').val()
-    const text = $('#descricao').val()
     
-
-
-
-    //criando linha 
     let linha = $('<li> </li>')
-    $(`<div id="div-lista"><p id="local-nome"></p><p id="local-data"></p></div>`).appendTo(linha)
-    $(`<textarea name="descricao" id="local-descricao" ></textarea>`).appendTo(linha)
+    $(``).appendTo(linha)
     $(linha).appendTo('ol')
     $(linha).fadeIn(6000)
     
-
-    
-
-    // resolver o add errado das linhas 
-    // limpar as linhas
-    
-
-    //adicionando o nome 
     $('#local-nome').text(nome)
 
 
-    //adicionando a descrição
-    $('#local-descricao').text(text)
 
 
     // convertendo a data para o padrão dd/mm/aaaa
@@ -48,6 +32,5 @@ $('form').on('submit', function(e){
     $('#data').val('')
     $('#nome').val('')
     })
-    linhas=''
 
     
