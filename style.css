@@ -16,7 +16,9 @@ header{
     margin-bottom: 10px;
 }
 form{
-
+    background-image: url(img/folhas.jpg) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
     max-width: 600px;
     height: 220px;
     margin: auto;
@@ -25,17 +27,18 @@ form{
 }
 form img {
     width: 100px;
+    margin: 0px 150px;
 }
 
 #nome{
-    margin: 15px 15px 5px ;
+    margin: 5px 65px 5px ;
     padding: 5px;
     width: 250px;
     border: none;
     border-radius: 8px;
 }
 #data{
-    margin: 0px 15px 5px ;
+    margin: 0px 65px 5px ;
     padding: 5px;
     width: 250px;
     border: none;
@@ -46,7 +49,7 @@ button{
     
     padding: 2px;
     border: none;
-    margin-left: 15px;
+    margin-left: 65px;
     border-radius: 8px;
     width: 80px;
 }
