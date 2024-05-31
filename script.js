@@ -8,17 +8,22 @@ $(document).ready(function(){
         let divLista = $('<div class="lista"></div>');
         let nomeParagrafo = $('<p class="local-nome"></p>').text(nome);
         let dataParagrafo = $('<p class="local-data"></p>').text(formatarData(data));
-        let checkbox = $('<input type="checkbox" name="" id="">');
 
         divLista.append(nomeParagrafo);
         divLista.append(dataParagrafo);
-        divLista.append(checkbox);
+
         linha.append(divLista);
 
         $('ol').append(linha);
 
         $('#nome').val('');
         $('#data').val('');
+
+
+    });
+    
+    $(document).on('click', 'li', function(){
+        $(this).toggleClass('selected');
     });
 
     function formatarData(data){
