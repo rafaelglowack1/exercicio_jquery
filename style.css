@@ -53,7 +53,7 @@ ol{
 li{
     list-style: none;
 }
-#lista{
+.lista{
     display: flex;
     width: 500px;
     justify-content: space-between;
