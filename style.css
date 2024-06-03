@@ -5,10 +5,13 @@
     
 }
 body{
-    background-color: rgba(0, 0, 0, 0.521);
+    background-image: url(img/laranja.jpg);
+    background-repeat: repeat-y;
+    background-size: 200%;
+    background-position:left top;
+
 }
 header{
-    background-color: rgb(141, 92, 0);
     color: white;
     padding: 8px;
     text-align: center;
@@ -16,30 +19,22 @@ header{
     margin-bottom: 10px;
 }
 form{
-    background-image: url(img/folhas.jpg) ;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    max-width: 600px;
+    max-width: 500px;
     height: 220px;
     margin: auto;
     border-radius: 12px;
     background-color: rgba(255, 166, 0, 0.685);
 }
-form img {
-    width: 100px;
-    margin: 0px 150px;
-}
-
 #nome{
-    margin: 5px 65px 5px ;
-    padding: 5px;
+    margin: 40px 65px 9px ;
+    padding: 10px;
     width: 250px;
     border: none;
     border-radius: 8px;
 }
 #data{
-    margin: 0px 65px 5px ;
-    padding: 5px;
+    margin: 1px 69px 9px ;
+    padding: 10px;
     width: 250px;
     border: none;
     border-radius: 8px;
@@ -47,9 +42,9 @@ form img {
 
 button{
     
-    padding: 2px;
+    padding: 5px;
     border: none;
-    margin-left: 65px;
+    margin-left: 69px;
     border-radius: 8px;
     width: 80px;
 }
@@ -62,6 +57,8 @@ li {
     position: relative;
     padding: 10px 0;
     cursor: pointer;
+    font-size: larger;
+    color: rgb(202, 202, 202);
 }
 .lista {
     display: flex;
@@ -75,7 +72,7 @@ li {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: black;
+    background-color: white;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
